@@ -1,0 +1,19 @@
+.tfg-tweets-analitycs {
+  &__info-state {
+    display: flex;
+    justify-content: space-between;
+
+    i {
+      &:hover {
+        color: #2962FF;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__chart-buttons {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+  }
+}

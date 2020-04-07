@@ -1,0 +1,112 @@
+@import '~bootstrap/dist/css/bootstrap.css';
+
+html {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+html, body, #index {
+  height: 100%;
+  margin: 0;
+  background-color: unset;
+}
+.cont {
+  display: flex;
+  height: calc(100% - 50px); 
+  background-color: #eef5f9
+}
+
+.main {
+  overflow-y: scroll;
+  height:100%;
+  width: 100%;
+  padding: 15px 15px 0 15px;
+}
+
+$width-login: 400px;
+
+.tfg-login-page {
+  display: flex;
+  flex-direction: column;  /* make main axis vertical */
+  justify-content: center; /* center items vertically, in this case */
+  align-items: center; 
+  height: 100%;
+}
+
+.tfg-login {
+  display: flex;
+  flex-direction: column;  /* make main axis vertical */
+  justify-content: center; /* center items vertically, in this case */
+  background-color: rgba(255,255,255, 1);
+  padding: 15px 20px;
+  border-radius: 15px;
+  // position: fixed;
+  width: $width-login;
+  // top: calc(50% - 100px);
+  // left: calc(50% - 200px);
+  .tfg-buttons {
+    display: flex;
+    justify-content: space-between
+  }
+}
+
+.tfg-modal {
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+
+    i {
+      font-size: 25px;
+      cursor: pointer;
+
+      &:hover {
+        color: red;
+      }
+    }
+  }
+}
+
+.tfg-tweets {
+  list-style-type: none;
+
+  &__tweet {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+    &:hover {
+      background-color: #CEECF5;
+    }
+
+    i {
+      font-size: 24px;
+      width: 50px;
+      cursor: pointer;
+      text-align: center;
+
+      &:hover {
+        color: blue;
+      }
+    }
+  }
+}
+
+.tfg-page-result {
+  &__navigation-bar {
+    text-align: right;
+    margin-bottom: 10px;
+  }
+
+  &__results {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__result1 {
+    width: 49%;
+  }
+
+  &__result2 {
+    width: 49%;
+  }
+}
